@@ -17,7 +17,7 @@ function ordenamientoBurbuja(array) {
 function ordenamientoInsercion(array){
     let pos = undefined;
     let tmp = undefined;
-    for (let i = 0; i < array.length - 1; i++) {
+    for (let i = 0; i < array.length; i++) {
         pos = i;
         tmp = array[i];
         while(pos > 0 && array[pos - 1] > tmp) {
