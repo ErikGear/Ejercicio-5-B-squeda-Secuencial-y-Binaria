@@ -15,17 +15,17 @@ function ordenamientoBurbuja(array) {
 }
 
 function ordenamientoInsercion(array){
-    let pos = undefined;
-    let tmp = undefined;
+    let posicion = undefined;
+    let valorPosicion = undefined;
     for (let i = 1; i < array.length; i++) {
-        pos = i;
-        tmp = array[i];
-        while(pos > 0 && array[pos - 1] > tmp) {
-            array[pos] = array[pos - 1];
-            pos--;
+        posicion = i;
+        valorPosicion = array[i];
+        while(posicion > 0 && array[posicion - 1] > valorPosicion) {
+            array[posicion] = array[posicion - 1];
+            posicion--;
         }
 
-        array[pos] = tmp;
+        array[posicion] = valorPosicion;
     }
 }
 
@@ -51,7 +51,7 @@ function busquedaSecuencial(array) {
 function busquedaBinaria(array) {}
 
 //primero ordenamos el arreglo
-//ordenamientoBurbuja(arreglo);
-ordenamientoInsercion(arreglo);
+ordenamientoBurbuja(arreglo);
+//ordenamientoInsercion(arreglo);
 console.log(arreglo);
 console.log("\n");
