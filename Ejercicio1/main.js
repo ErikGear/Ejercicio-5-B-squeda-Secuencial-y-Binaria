@@ -17,7 +17,7 @@ function ordenamientoBurbuja(array) {
 function ordenamientoInsercion(array){
     let pos = undefined;
     let tmp = undefined;
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 1; i < array.length; i++) {
         pos = i;
         tmp = array[i];
         while(pos > 0 && array[pos - 1] > tmp) {
@@ -51,6 +51,7 @@ function busquedaSecuencial(array) {
 function busquedaBinaria(array) {}
 
 //primero ordenamos el arreglo
-ordenamientoBurbuja(arreglo);
+//ordenamientoBurbuja(arreglo);
+ordenamientoInsercion(arreglo);
 console.log(arreglo);
 console.log("\n");
