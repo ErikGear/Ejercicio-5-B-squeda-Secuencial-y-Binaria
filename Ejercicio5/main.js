@@ -44,11 +44,11 @@ class ListaContactos {
 
   buscarContacto(contactoNombre) {
     const contactoObjetivo = this.#contactos.find(
-      (contacto) => { contacto.getNombre === contactoNombre}
+      (contacto) =>  contacto.getNombre === contactoNombre
     );
 
-    if (contactoNombre) {
-      console.log(`El contacto ${contactoObjetivo.toString()}, existe en la lista`);
+    if (contactoObjetivo) {
+      console.log(`El contacto ${contactoNombre}, existe en la lista`);
     } else {
       console.log(`El contacto: ${contactoNombre} no existe, en la lista`);
     }
